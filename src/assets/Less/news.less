@@ -1,0 +1,152 @@
+
+.wrap{
+    background-color: #f8f8fa;
+    min-width: 1200px;
+    margin-top: 60px;
+
+    // 新闻资讯
+    .newsList{
+        width: 1200px;
+        margin: 0 auto;
+        font-family: HelveticaNeue, Helvetica, Arial, "Microsoft YaHei", sans-serif;
+        min-height: 720px;
+        .newsList_box{
+            position: relative;
+            width: 100%;
+            padding-bottom: 80px;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 9px 0px 
+                rgba(198, 203, 214, 0.66);
+
+            .content_div{
+                width: 1000px;
+                margin: 0 auto;
+
+                .news_title{
+                    padding-top: 30px;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 18px;
+                    color: #10274a;
+                    border-bottom: 1px solid #d9d9d9;
+
+                    .title_box_div{
+                        width: 120px;
+                        height:36px;
+                        border-bottom: 1px solid #10274a;
+                    }
+                }
+
+                .news_content{
+                    width: 100%;
+
+                    .news_item{
+                        border-bottom: 1px solid #d9d9d9;
+                        overflow: hidden;
+
+                        .item_title{
+                            height: 60px;
+                            line-height: 60px;
+                            float: left;
+                            overflow: hidden;
+                            width: 100%;
+
+                            .blueSlider{
+                                margin-top: 28px;
+                                margin-right: 10px;
+                                float: left;
+                                width: 6px;
+                                height: 6px;
+                                background-color: #10274a;
+                            }
+
+                            .title_text{
+                                cursor: pointer;
+                                font-size: 16px;
+                                color: #5c5c5d;
+                                float: left;
+                                width: 980px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        }
+
+                        .item_date{
+                            height: 40px;
+                            line-height: 40px;
+                            float: left;
+                            text-align: right;
+                            font-size: 14px;
+                            color: #5c5c5d;
+                            width: 100%
+                        }
+
+                        .item_text{
+                            text-indent: 2rem;
+                            line-height: 28px;
+                            font-size: 14px;
+                            color: #a0a1a2;
+                            float: right;
+                            font-weight: lighter;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .Paging{
+                    float: right;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    // 新闻详情
+    .news_detail{
+        width: 1200px;
+        margin: 0 auto;
+        
+        .news_detail_box{
+            position: relative;
+            width: 100%;
+            min-height: 720px;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 9px 0px 
+                rgba(198, 203, 214, 0.66);
+
+            .content_div{
+                width: 1000px;
+                margin: 0 auto;
+
+                .content_title{
+                    width: 100%;
+                    text-align: center;
+                    padding-top: 30px;
+                    border-bottom: 1px solid #d9d9d9;
+
+                    .title_top{
+                        color: #5c5c5d;
+                        font-size: 16px;
+                    }
+
+                    .title_footer{
+                        height: 40px;
+                        line-height: 40px;
+                        color: #5c5c5d;
+                        font-size: 14px;
+                    }
+                }
+
+                .text_detail{
+                    text-indent: 2rem;
+                    line-height: 30px;
+                    width: 100%;
+                    font-size: 14px;
+                    margin-top: 20px;
+                    color: #5c5c5d;
+                }
+            }
+        }
+    }
+}

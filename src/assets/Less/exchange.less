@@ -1,0 +1,1610 @@
+.wrap{
+    background-color: #f8f8fa;
+    min-width: 1200px;
+    margin-top: 60px;
+}
+.redColor{
+    color: #f77070 !important;
+}
+
+.greenColor{
+    color: #4bc998 !important;
+}
+.blueColor{
+    color: #a1d1fe !important;
+}
+#kline_container{
+    margin: 8px auto 0 !important;
+}
+#chart_toolbar {
+    height: 32px !important;
+}
+.showData{
+    width: 100%;
+    padding-top: 12px;
+
+    .showDataBox{
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        background-color: #f6f6f6;
+        box-shadow: 0px 0px 6px 0px rgba(198, 203, 214, 0.66);
+    }
+
+    .searchDiv{
+        position: absolute;
+        margin-top: 4px;
+        width: 263px;
+        background-color: #dedede;
+
+        .searchInputDiv{
+            margin: 10px auto 0;
+            overflow: hidden;
+            width: 231px;
+            height: 30px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            line-height: 30px;
+            input{
+                padding-left: 10px;
+                width: 160px;
+                height: 25px;
+                border: 0px;
+                background-color: #ffffff;
+                outline: none;
+                color:#424e69;
+            }
+        }
+
+        .searchDataDiv{
+            width: 100%;
+            margin-top: 20px;
+            
+            .title_nav{
+                width: 100%;
+                overflow: hidden;
+
+                .navItem{
+                    cursor: pointer;
+                    width: 25%;
+                    float: left;
+                    height: 30px;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #7e828c;
+                       
+                    span{
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        padding-bottom: 5px;
+                    }
+                }
+
+                .clickActive{
+                    box-sizing: border-box;
+                    color: #529ae4;
+                    
+                    span{
+                        border-bottom: 2px solid #529ae4;
+                    }
+                }
+            }
+
+            .searchItem{
+                
+                width: 250px;
+                margin: 10px auto;
+                background-color: #fff;
+
+                .itemTitleDiv{
+                    width: 100%;
+                    height: 30px;
+                    background-color: rgba(240, 240, 240, 0.34);
+                    color: #709dea;
+                    font-size: 12px;
+                    display: flex;
+                    flex-direction: row;
+
+                    .itemTitle{
+                        flex: 1;
+                        text-align: center;
+                        line-height: 30px;
+                    }
+                }
+
+                .itemContentDiv{
+                    width: 100%;
+
+                    .itemsDiv{
+                        color: #a69b9e;
+                        font-size: 12px;
+                        display: flex;
+                        flex-direction: row;
+                        
+                        .itemsText{
+                            flex: 1;
+                            text-align: center;
+                            line-height: 30px;
+                        }
+                    }
+
+                    .itemsDiv:hover{
+                        background-color: rgba(255, 145, 2, 0.09);
+                    }
+                }
+            }
+        }
+    }
+
+    .box_header{
+
+        width: 100%;
+        height: 58px;
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        p{
+            margin-bottom: 0px;
+        }
+        .choose_trading_area{
+            cursor: pointer;
+            color: #fff;
+            width: 263px;
+            height: 58px;
+            background-color: #424e69;
+            position: relative;
+
+            .right_icon{
+                position: absolute;
+                right: 32px;
+                top: 20px;
+            }
+
+            .titleBox{
+                width: 100%;
+                text-align: center;
+
+                .title_engh{
+                    padding-top: 5px;
+                    font-size: 20px;
+                }
+
+                .title_chin{
+                    font-size: 14px;
+                }
+            }
+
+            .right_icon{
+                width: 7px;
+                height: 14px;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .dayDataBox{
+            margin-top: 7px;
+            text-align: center;
+            box-sizing: border-box;
+            width: 146px;
+            height: 45px;
+            border-right: 1px solid #efefef;
+
+            .show_count{
+                font-size: 18px;
+                color: #aeaeae;
+            }
+
+            .show_text{
+                font-size: 12px;
+                color: #424e69;
+            }
+        }
+
+        .dealMoneyBox{
+            margin-top: 7px;
+            width: 175px;
+            text-align: center;
+            box-sizing: border-box;
+            height: 45px;
+
+            .show_count{
+                font-size: 18px;
+                color: #aeaeae;
+            }
+            
+            .show_text{
+                font-size: 12px;
+                color: #424e69;
+            }
+        }
+
+        .K_line_btn{
+            overflow: hidden;
+            cursor: pointer;
+            margin-top: 12px;
+            width: 140px;
+	        height: 33px;
+            border: 1px solid #b9dbff;
+            background-color: #fff;
+            border-radius: 33px;
+            line-height: 32px;
+            text-align: center;
+
+            i{
+                margin-top: 5px;
+                margin-left: 32px;
+                float: left;
+            }
+
+            span{
+                float: left;
+                color: #6eabea;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .box_content{
+        width: 100%;
+        margin-bottom: 12px;
+        overflow: hidden;
+
+        .content_left{
+            float: left;
+            width: 270px;
+
+            .left_item_box{
+                width: 255px;
+                margin: 8px auto 0;
+
+                .left_title{
+                    width: 100%;
+                    height: 32px;
+                    background-color: #ececec;
+                    color: #424e69;
+                    font-size: 12px;
+                    display: flex;
+                    flex-direction: row;
+                    line-height: 32px;
+
+                    .titleItem{
+                        flex: 1;
+                        text-align: center;
+                    }
+                }
+
+                .itemsBox{
+                    width: 100%;
+                    background-color: #fff;
+                    min-height: 780px;
+                    
+                    .dataDemoBox{
+                        width: 100%;
+                        color: #6eabea;
+                        font-size: 12px;
+                        display: flex;
+                        flex-direction: row;
+                        line-height: 30px;
+                    }
+
+                    .itemText{
+                        flex: 1;
+                        text-align: center;
+                    }
+                    .grayColor{
+                        color: #969696;
+                    }
+                }
+            }
+
+            
+        }
+
+        .content_center{
+            float: left;
+            width: 660px;
+
+            .content_vertil{
+                overflow: hidden;
+                width: 650px;
+                height: 80px;
+                margin: 8px auto 0;
+                background-color: #fff;
+                box-shadow: 0px 2px 4px 0px rgba(184, 191, 209, 0.66);
+
+                .vertilDiv1{
+                    margin-top: 5px;
+                    float: left;
+                    width: 324px;
+                    float: left;
+                    height: 70px;
+
+                    .vertilDivTop{
+                        margin-top: 10px;
+                        overflow: hidden;
+                        width: 100%;
+                        font-size: 14px;
+
+                        .available{
+                            margin-left: 37px;
+                            float: left;
+                            color: rgba(165,165,165,0.9);
+                        }
+
+                        .topCount{
+                            float: right;
+                            margin-right: 20px;
+                            color: #777777;;
+                        }
+
+                        .unit{
+                            margin-right: 32px;
+                            float: right;
+                            color: rgba(165,165,165,0.9);
+                        }
+                    }
+                }
+
+                .vertilLine{
+                    margin-top: 5px;
+                    float: left;
+                    width: 1px;
+                    height: 70px;
+                    background-color: #eaeaea;
+                }
+            }
+
+            .footer_bottom{
+                width: 650px;
+                overflow: hidden;
+                margin: 9px auto 0;
+
+                .left_box,.right_box{
+                    width: 322px;
+                    height: 330px;
+                    background-color: #ffffff;
+                    box-shadow: 0px 2px 4px 0px rgba(184, 191, 209, 0.66);
+
+                    .box_son{
+                        width: 287px;
+                        margin: 0 auto;
+
+                        .headerBox{
+                            width: 100%;
+                            height: 56px;
+                            border-bottom: 1px solid #ebebec;
+                            overflow: hidden;
+                            line-height: 70px;
+
+                            .bsDiv{
+                                margin-left: 7px;
+                                color: #4bc998;
+                                font-size: 16px;
+                                float: left;
+                            }
+
+                            .depositDiv{
+                                font-size: 14px;
+                                color: #959595;
+                                cursor: pointer;
+                                margin-right: 15px;
+                                float: right;
+                            }
+
+                            .withrawDiv{
+                                margin-right: 20px;
+                                font-size: 14px;
+                                color: #959595;
+                                cursor: pointer;
+                                float: right;
+                            }
+                        }
+
+                        .twoBox{
+                            width: 275px;
+                            overflow: hidden;
+                            margin: 20px auto 0;
+                            line-height: 37px;
+                            font-size: 14px;
+                        
+                            .twoBox_left{
+                                float: left;
+                                box-sizing: border-box;
+                                border: 1px solid #dcdcdc;
+                                border-radius: 2px 0 0 2px;
+                                width: 218px;
+                                height: 37px;
+                                color: #c3c3c3;
+                                overflow: hidden;
+
+                                .leftText{
+                                    float: left;
+                                    margin-left: 11px;
+                                    color:#c3c3c3;
+                                    line-height: 35px;
+                                }
+
+                                .rightText{
+                                    float: right;
+                                    margin-right: 11px;
+                                }
+                                .buyInput{
+                                    color: #4bc998;
+                                    border:0px;
+                                    background-color: #ffffff;
+                                    text-align: right;
+                                    outline: none;
+                                    padding: 0 10px 0 0;
+                                }
+                                .sellInput{
+                                    color: #f77070;
+                                    border:0px;
+                                    background-color: #ffffff;
+                                    text-align: right;
+                                    outline: none;
+                                    padding: 0 10px 0 0;
+                                }
+                                .ant-form-item-control{
+                                    line-height: 35px;
+                                }
+                                input:focus{
+                                    border:0 !important;
+                                    border-color: #fff;  
+                                    -webkit-box-shadow: 0 0 0 0;
+                                            box-shadow: 0 0 0 0;
+                                }
+                            }
+                            
+                            .twoBox_right{
+                                text-align: center;
+                                color: #959595;
+                                background-color: #f7f7f7;
+                                float: left;
+                                border: 1px solid #dcdcdc;
+                                border-radius: 0 2px 2px 0;
+                                border-left: none;
+                                box-sizing: border-box;
+                                width: 57px;
+                                height: 37px;
+                            }
+                        }
+
+                        .mt{
+                            margin-top: 15px;
+                        }
+
+                        .fourBox{
+                            position: relative;
+                            width: 273px;
+                            height: 16px;
+                            line-height: 16px;
+                            margin: 0 auto 0;
+                        }
+
+                        .fiveBox{
+                            overflow: hidden;
+                            width: 272px;
+                            height: 22px;
+                            line-height: 22px;
+                            margin: 50px auto 0;
+
+                            .totalAmount{
+                                font-size: 14px;
+                                color: #adadad;
+                                float: left;
+                            }
+
+                            .totalAmountCount{
+                                margin-left: 10px;
+                                font-size: 14px;
+                                color: #4bc998;
+                                float: left;
+                            }
+
+                            .totalAmountName{
+                                margin-left: 11px;
+                                float: left;
+                                color: rgba(165,165,165,0.9);
+                            }
+
+                            .totalAmountRate{
+                                float: right;
+                                font-size: 12px;
+                                color:  #a5a4a4;
+
+                                span{
+                                    color: #4bc998;
+                                }
+                            }
+                        }
+
+                        .sixBtn{
+                            margin: 20px auto 0;
+                            color: #fff;
+                            text-align: center;
+                            line-height: 42px;
+                            width: 275px;
+                            height: 44px;
+                        }
+
+                        .greenBtn{
+                            background-color: #4bc998;
+                        }
+                        .buyButton{
+                            color: #fff;
+                            text-align: center;
+                            line-height: 42px;
+                            width: 275px;
+                            height: 44px;
+                            background-color: #4bc998;
+                            border: 1px solid #4bc998;
+                        }
+                        .sellButton{
+                            color: #fff;
+                            text-align: center;
+                            line-height: 42px;
+                            width: 275px;
+                            height: 44px;
+                            background-color: #f77070;
+                            border: 1px solid #f77070;
+                        }
+                    }
+                }
+
+                .left_box{
+                    float: left;
+                }
+
+                .right_box{
+                    float: right;
+                }
+            }
+        }
+
+        .content_right{
+            float: right;
+            width: 256px;
+            margin-right: 10px;
+
+            .right_dataShow{
+                background-color: #fff;
+                margin-top: 8px;
+                width: 100%;
+                height: 402px;
+                position: relative;
+                .ri_show_title{
+                    width: 100%;
+                    height: 32px;
+                    line-height: 32px;
+                    background-color: #ececec;
+                    color: #424e69;
+                    font-size: 12px;
+                    display: flex;
+                    flex-direction: row;
+
+                    .ri_titleItem{
+                        text-align: center;
+                        flex: 1;
+                    }
+                }
+                .sell{
+                    position: absolute;
+                    bottom: 0px;
+                }
+                .ri_show_text{
+                    width: 100%;
+
+                    .ri_show_item{
+                        margin-top: 13px;
+                        margin-bottom: 13px;
+                        width: 100%;
+                        height: 22px;
+                        line-height: 22px;
+                        font-size: 14px;
+                        display: flex;
+                        color: #9c9c9c;
+                        flex-direction: row;
+                        cursor: pointer;
+                        .bsDes{
+                            padding-left: 20px;
+                            float: left;
+                        }
+                        .bsPrice{
+                            text-align: right;
+                            padding-right: 18px;
+                        }
+                        .bsVol{
+                            text-align: left;
+                            padding-left: 4px;
+                        }
+                        .ri_showItem{
+                            text-align: center;
+                            flex: 1;
+                            
+                            .bacDiv{
+                                background-color: rgba(183, 243, 220, 0.1);
+                            }
+
+                            .bacDivRed{
+                                background-color: rgba(247, 198, 198, 0.1);
+                            }
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .box_footer{
+        width: 1200px;
+        margin: 12px auto 0;
+
+        .footer_box{
+            width: 1183px;
+            margin: 0 auto;
+            overflow: hidden;
+            padding-bottom: 8px;
+            .left_nav{
+                width: 100%;
+                float: left;
+                background-color: #e5e7ec;
+                font-size: 16px;
+                color: #5f6a7b;
+                text-align: center;
+                line-height: 42px;
+
+                .active{
+                    background-color: #f6f6f6;
+                    border-bottom: 1px solid #97c9f8;
+                }
+                .navItemTitle{
+                    height: 42px;
+                    cursor: pointer;
+                    width: 120px;
+                    float: left;
+                }
+                .navItemTitle:hover{
+                    background-color: #cac9c9;
+                    border-bottom: 1px solid #8fbeea;
+                    color: #65686d;
+                }
+            }
+
+            .right_item{
+                float: left;
+                width: 100%;
+                background-color: #fff;
+
+                .right_title,.text_box_item{
+                    margin-top: 11px;
+                    padding-bottom: 10px;
+                    color: #969696;
+                    font-size: 14px;
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    border-bottom: 1px solid #f6f6f6;
+
+                    .date{
+                        flex: 2;
+                        text-align: center;
+                        word-wrap: break-word;
+                        color: #969696;
+                    }
+                    
+                    .type{
+                        flex: 1;
+                        text-align: center;
+                        word-wrap: break-word;
+                    }
+
+                    .volume{
+                        flex: 3;
+                        text-align: center;
+                        word-wrap: break-word;
+                    }
+
+                    .price{
+                        flex: 2;
+                        text-align: center;
+                        word-wrap: break-word;
+                    }
+
+                    .avgPrice{
+                        flex: 2;
+                        text-align: center;
+                        word-wrap: break-word;
+                        color: #969696;
+                    }
+
+                    .totalAmount{
+                        flex: 2;
+                        text-align: center;
+                        word-wrap: break-word;
+                        color: #969696;
+                    }
+
+                    .status{
+                        flex: 1;
+                        text-align: center;
+                        word-wrap: break-word;
+                    }
+
+                    .operation{
+                        flex: 1;
+                        text-align: center;
+                        word-wrap: break-word;
+                    }
+                    .action{
+                        cursor: pointer;
+                        color:#0385d0 !important;
+                    }
+                    .action:hover{
+                        color: #0385d0 !important;
+                        text-decoration:underline !important;
+                    }
+                }
+
+                .right_text_box{
+                    width: 100%;
+                    min-height: 212px;
+                    position: relative;
+                    height: 432px;
+                    overflow: auto;
+                    .posiDiv{
+                        text-align: center;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+
+                        .posiText{
+                            font-size: 14px;
+                        }
+                    }
+                    .text_box_item{
+                        div{
+                            span{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .right_text_box::-webkit-scrollbar {/*滚动条整体样式*/
+                    width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+                    height: 4px;
+                }
+                .right_text_box::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+                    border-radius: 5px;
+                    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+                    background: rgba(0,0,0,0.2);
+                }
+                .right_text_box::-webkit-scrollbar-track {/*滚动条里面轨道*/
+                    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+                    border-radius: 0;
+                    background: rgba(0,0,0,0.1);
+                }
+            }
+        }
+    }
+}
+
+.currencyTran{
+    width: 100%;
+    margin-top: 40px !important;
+    .header{
+        width: 100%;
+        height: 40px;
+        background-color: #10274a;
+        box-shadow: -4px 4px 10px 0px rgba(16, 39, 74, 0.15);
+        
+        .header_box{
+            width: 100%;
+            height: 40px;
+            .header_left{
+                margin-left: 10px;
+                .logo{
+                    margin-top: 4px;
+                }
+            }
+            .header_right{
+                margin-right: 20px;
+                .person{
+                    margin-top: 10px;
+                }
+                .split{
+                    line-height: 40px;
+                }
+                .lanuage{
+                    height: 40px;
+                    .icon_arrow_down{
+                        margin-top: 20px !important;
+                    }
+                }
+                .national_flag{
+                    margin-top: 9px;
+                }
+            }
+            .header_content{
+                line-height:40px;
+            }
+        }
+    }
+
+    .returnBtnDiv{
+        cursor: pointer;
+        color: #91b5eb;
+        float: right;
+        line-height: 60px;
+        margin-right: 88px;
+    }
+    
+    .currencyTranTwo{
+        width: 100%;
+        overflow: hidden;
+        background-color: #1b1d28;
+
+        .left_div{
+            width: 66.6%;
+            float: left;
+            .left_top{
+                margin-top: 4px;
+                width: 100%;
+                height: 500px;
+            }
+
+            .left_footer{
+                margin-top: 4px;
+                width: 100%;
+                height: 304px;
+                background-color: #252839;
+
+                .footer_box{
+                    width: 100%;
+                    overflow: hidden;
+        
+                    .left_nav{
+                        width: 100%;
+                        float: left;
+                        background-color: #1b1d28;
+                        font-size: 12px;
+                        color: #969696;
+                        text-align: center;
+                        line-height: 42px;
+        
+                        .active{
+                            background-color: #2f3348;
+                            border-bottom: 1px solid #0e397b;
+                        }
+                        .navItemTitle:hover{
+                            background-color: #cac9c9;
+                            border-bottom: 1px solid #0e397b;
+                            color: #65686d;
+                        }
+                        .navItemTitle{
+                            height: 42px;
+                            cursor: pointer;
+                            float: left;
+                            width: 100px;
+                        }
+                    }
+        
+                    .right_item{
+                        float: left;
+                        width: 100%;
+                        background-color: #252839;
+        
+                        .right_title,.text_box_item{
+                            height: 36px;
+                            line-height: 36px;
+                            color: #969696;
+                            font-size: 12px;
+                            display: flex;
+                            flex-direction: row;
+                            width: 100%;
+                            border-bottom: 1px solid #3c3f4c;
+        
+                            .date{
+                                flex: 2;
+                                text-align: center;
+                                word-wrap: break-word;
+                                color: #969696;
+                            }
+                            
+                            .type{
+                                flex: 1;
+                                text-align: center;
+                                word-wrap: break-word;
+                            }
+        
+                            .volume{
+                                flex: 2;
+                                text-align: center;
+                                word-wrap: break-word;
+                            }
+        
+                            .price{
+                                flex: 2;
+                                text-align: center;
+                                word-wrap: break-word;
+                            }
+        
+                            .avgPrice{
+                                flex: 2;
+                                text-align: center;
+                                word-wrap: break-word;
+                                color: #969696;
+                            }
+        
+                            .totalAmount{
+                                flex: 2;
+                                text-align: center;
+                                word-wrap: break-word;
+                                color: #969696;
+                            }
+        
+                            .status{
+                                flex: 1;
+                                text-align: center;
+                                word-wrap: break-word;
+                            }
+        
+                            .operation{
+                                flex: 1;
+                                text-align: center;
+                                word-wrap: break-word;
+                            }
+                            .action{
+                                cursor: pointer;
+                                color:#376db3 !important;
+                            }
+                            .action:hover{
+                                color: #0385d0 !important;
+                                text-decoration:underline !important;
+                            }
+                        }
+
+                        .right_title{
+
+                            .date{
+                                flex: 2;
+                                text-align: center;
+                                word-wrap: break-word;
+                            }
+                        }
+                        
+                        .right_text_box{
+                            width: 100%;
+                            height: 230px;
+                            position: relative;
+                            overflow:auto;
+                            .posiDiv{
+                                width: 130px;
+                                height: 68px;
+                                text-align: center;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                margin-left: -65px;
+                                margin-top: -34px;
+        
+                                .posiText{
+                                    font-size: 14px;
+                                    color: #b9ceff;
+                                }
+                            }
+                        }
+                        .right_text_box::-webkit-scrollbar {/*滚动条整体样式*/
+                            width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+                            height: 4px;
+                        }
+                        .right_text_box::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+                            border-radius: 5px;
+                            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+                            background: rgba(0,0,0,0.2);
+                        }
+                        .right_text_box::-webkit-scrollbar-track {/*滚动条里面轨道*/
+                            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+                            border-radius: 0;
+                            background: rgba(0,0,0,0.1);
+                        }
+                    }
+                }
+            }
+        }
+
+        .right_div{
+            float: right;
+            margin: 4px 2px 0 0;
+            width: 33%;
+            .right_top{
+                overflow: hidden;
+
+                .content_right{
+                    float: left;
+                    width: 49.6%;
+                    margin-right: 0.8%;
+        
+                    .right_dataShow{
+                        background-color: #252839;
+                        margin-top: 4px;
+                        height: 249px;
+                        position: relative;
+                        .ri_show_title{
+                            height: 24px;
+                            line-height: 24px;
+                            background-color: #2f3346;
+                            color: #a5a5a5;
+                            font-size: 12px;
+                            display: flex;
+                            flex-direction: row;
+        
+                            .ri_titleItem{
+                                text-align: center;
+                                flex: 1;
+                            }
+                        }
+                        .sell{
+                            position: absolute;
+                            bottom: 0px;
+                        }
+                        .ri_show_text{
+                            width: 100%;
+                            
+                            .ri_show_item{
+                                margin-top: 4px;
+                                margin-bottom: 4px;
+                                font-size: 12px;
+                                display: flex;
+                                color: #9c9c9c;
+                                flex-direction: row;
+                                cursor: pointer;
+                                .bsDes{
+                                    padding-left: 20px;
+                                    float: left;
+                                }
+                                .bsPrice{
+                                    text-align: right;
+                                    padding-right: 18px;
+                                }
+                                .bsVol{
+                                    text-align: left;
+                                    padding-left: 4px;
+                                }
+                                .ri_showItem{
+                                    text-align: center;
+                                    flex: 1;
+        
+                                    .bacDiv{
+                                        width: 50px;
+                                        background-color: rgba(75, 201, 152, 0.2);
+                                    }
+        
+                                    .bacDivRed{
+                                        width: 50px;
+                                        background-color: rgba(247, 112, 112, 0.2);
+                                    }
+                                }
+        
+                                
+                            }
+                        }
+                    }
+                }
+    
+                .content_left{
+                    float: left;
+                    width: 49.6%;
+        
+                    .left_item_box{
+                        margin-top: 4px;
+                        p{
+                            margin-bottom: 0px;
+                        }
+                        .searchDiv{
+                            position: absolute;
+                            margin-top: 4px;
+                            width: 100%;
+                            background-color: #272c4a;
+                    
+                            .searchInputDiv{
+                                margin: 10px auto 0;
+                                overflow: hidden;
+                                width: 80%;
+                                height: 30px;
+                                background-color: #ffffff;
+                                border-radius: 20px;
+                                line-height: 30px;
+                                input{
+                                    padding-left: 10px;
+                                    height: 25px;
+                                    border: 0px;
+                                    background-color: #ffffff;
+                                    outline: none;
+                                    color:#424e69;
+                                }
+                            }
+                    
+                            .searchDataDiv{
+                                width: 100%;
+                                margin-top: 20px;
+                                
+                                .title_nav{
+                                    width: 100%;
+                                    overflow: hidden;
+                    
+                                    .navItem{
+                                        cursor: pointer;
+                                        width: 25%;
+                                        float: left;
+                                        height: 30px;
+                                        text-align: center;
+                                        font-size: 14px;
+                                        color: #7e828c;
+                                           
+                                        span{
+                                            padding-left: 10px;
+                                            padding-right: 10px;
+                                            padding-bottom: 5px;
+                                        }
+                                    }
+                    
+                                    .clickActive{
+                                        box-sizing: border-box;
+                                        color: #529ae4;
+                                        
+                                        span{
+                                            border-bottom: 2px solid #529ae4;
+                                        }
+                                    }
+                                }
+                    
+                                .searchItem{
+                                    margin: 10px auto;
+                                    background-color:#272c4a;
+                    
+                                    .itemTitleDiv{
+                                        width: 100%;
+                                        height: 30px;
+                                        background-color: rgba(29, 29, 29, 0.34);
+                                        color: #709dea;
+                                        font-size: 12px;
+                                        display: flex;
+                                        flex-direction: row;
+                    
+                                        .itemTitle{
+                                            flex: 1;
+                                            text-align: center;
+                                            line-height: 30px;
+                                        }
+                                    }
+                    
+                                    .itemContentDiv{
+                                        width: 100%;
+                    
+                                        .itemsDiv{
+                                            color: #ffffff;
+                                            font-size: 12px;
+                                            display: flex;
+                                            flex-direction: row;
+                                            
+                                            .itemsText{
+                                                flex: 1;
+                                                text-align: center;
+                                                line-height: 30px;
+                                            }
+                                        }
+                    
+                                        .itemsDiv:hover{
+                                            background-color: rgba(255, 145, 2, 0.09);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .choose_trading_area{
+                            cursor: pointer;
+                            color: #fff;
+                            height: 50px;
+                            background-color: #2f375a;
+                            position: relative;
+                
+                            .right_icon{
+                                position: absolute;
+                                right: 32px;
+                                top: 14px;
+                            }
+                
+                            .titleBox{
+                                width: 100%;
+                                text-align: center;
+                
+                                .title_engh{
+                                    padding-top: 8px;
+                                    font-size: 12px;
+                                }
+                
+                                .title_chin{
+                                    font-size: 12px;
+                                }
+                            }
+                
+                            .right_icon{
+                                width: 7px;
+                                height: 14px;
+                
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+    
+                        .dataTotal{
+                            background-color: #242738;
+    
+                            .totalBox{
+                                width: 90%;
+                                margin: 0 auto;
+                                padding-bottom: 4px;
+                                .countFont{
+                                    font-size: 12px;
+                                    color: #c1c8d1;
+                                }
+    
+                                .textFont{
+                                    font-size: 12px;
+                                    color: #8096b2;
+                                }
+    
+                                .first_line{
+                                    width: 100%;
+                                    height: 44px;
+                                    padding-top: 4px;
+                                    text-align: center;
+                                }
+    
+                                .secend_line{
+                                    box-sizing: border-box;
+                                    width: 100%;
+                                    height: 44px;
+                                    border-top: 1px solid #303547;
+    
+                                    .sec_lineBox{
+                                        width: 100%;
+                                        
+                                        .boxLeft,.boxRight{
+                                            margin-top: 4px;
+                                            text-align: center;
+                                            width: 50%;
+                                            float: left;
+                                            border-right: 1px solid #303547;
+                                        }
+    
+                                        .boxRight{
+                                            border-right: none;
+                                        }
+                                    }
+                                }
+    
+                                
+                            }
+                        }
+        
+                        .left_title{
+                            width: 100%;
+                            height: 32px;
+                            background-color: #2f3346;
+                            color: #a5a5a5;
+                            font-size: 12px;
+                            display: flex;
+                            flex-direction: row;
+                            line-height: 32px;
+        
+                            .titleItem{
+                                flex: 1;
+                                text-align: center;
+                            }
+                        }
+        
+                        .itemsBox{
+                            width: 100%;
+                            background-color: #252839;
+                            padding-bottom: 4px;
+                            min-height: 284px;
+                            .dataDemoBox{
+                                width: 100%;
+                                color: #6eabea;
+                                font-size: 12px;
+                                display: flex;
+                                flex-direction: row;
+                                line-height: 20px;
+                            }
+        
+                            .itemText{
+                                flex: 1;
+                                text-align: center;
+                            }
+        
+                            .orangeText{
+                                color: #f6895e;
+                            }
+        
+                            .blueText{
+                                color: #a1d1fe;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right_footer{
+                overflow: hidden;
+                width: 100%;
+                .content_vertil{
+                    overflow: hidden;
+                    height: 60px;
+                    margin: 0 auto;
+    
+                    .vertilDiv1,.vertilDiv2{
+                        background-color: #252839;
+                        margin-top: 4px;
+                        float: left;
+                        width: 49.6%;
+                        // margin-left: 6px;
+                        height: 52px;
+    
+                        .vertilDivTop{
+                            margin-top: 6px;
+                            overflow: hidden;
+                            width: 100%;
+                            font-size: 12px;
+    
+                            .available{
+                                margin-left: 12%;//337px
+                                float: left;
+                                color: rgba(165,165,165,0.9);
+                            }
+    
+                            .topCount{
+                                float: right;
+                                margin-right: 5%;//15px;
+                                color: #777777;;
+                            }
+    
+                            .unit{
+                                margin-right: 12%;//32px;
+                                float: right;
+                                color: rgba(165,165,165,0.9);
+                            }
+                        }
+                    }
+
+                    .vertilDiv2{
+                        float: right;
+                    }
+                }
+
+                .footer_bottom{
+                    width: 100%;
+                    overflow: hidden;
+                    margin: 0 auto;
+                    .ant-form-item-label{
+                        line-height:37px;
+                        label{
+                            color:rgba(245, 245, 245, 0.85);
+                        }
+                    }
+                    .ant-slider-rail{
+                        background-color: #595a63;
+                    }
+                    .ant-slider-mark-text,.ant-slider-mark-text-active{
+                        color:#98999a
+                    }
+                    .left_box,.right_box{
+                        width: 49.6%;
+                        padding-bottom: 6px;
+                        background-color: #252839;
+    
+                        .box_son{
+                            margin: 0 auto;
+    
+                            .headerBox{
+                                width: 100%;
+                                height: 34px;
+                                overflow: hidden;
+                                line-height: 34px;
+    
+                                .bsDiv{
+                                    margin-left: 7px;
+                                    color: #4bc998;
+                                    font-size: 14px;
+                                    float: left;
+                                }
+    
+                                .depositDiv{
+                                    font-size: 12px;
+                                    color: #959595;
+                                    cursor: pointer;
+                                    margin-right: 15px;
+                                    float: right;
+                                }
+    
+                                .withrawDiv{
+                                    margin-right: 20px;
+                                    font-size: 12px;
+                                    color: #959595;
+                                    cursor: pointer;
+                                    float: right;
+                                }
+                            }
+    
+                            .twoBox{
+                                width: 100%;
+                                overflow: hidden;
+                                margin: 4px auto 0;
+                                line-height: 37px;
+                                font-size: 14px;
+                            
+                                .twoBox_left{
+                                    float: left;
+                                    box-sizing: border-box;
+                                    border: 1px solid #3c3e48;
+                                    background-color: #252839;
+                                    border-radius: 2px 0 0 2px;
+                                    height: 37px;
+                                    color: #c3c3c3;
+                                    overflow: hidden;
+                                    width: 80%;
+                                    .leftText{
+                                        float: left;
+                                        margin-left: 11px;
+                                        width: 27px;
+                                        font-size: 12px;
+                                    }
+    
+                                    .rightText{
+                                        float: right;
+                                        margin-right: 11px;
+                                    }
+                                    .buyInput{
+                                        color: #4bc998;
+                                        border:0px;
+                                        background-color: #252839;
+                                        text-align: right;
+                                        outline: none;
+                                        padding: 0 10px 0 0;
+                                    }
+                                    .sellInput{
+                                        color: #f77070;
+                                        border:0px;
+                                        background-color: #252839;
+                                        text-align: right;
+                                        outline: none;
+                                        padding: 0 10px 0 0;
+                                    }
+                                    .ant-form-item-control{
+                                        line-height: 35px;
+                                    }
+                                    input:focus{
+                                        border:0 !important;
+                                        border-color: #252839;  
+                                        -webkit-box-shadow: 0 0 0 0;
+                                                box-shadow: 0 0 0 0;
+                                    }
+                                }
+                                
+                                .twoBox_right{
+                                    text-align: center;
+                                    color: #959595;
+                                    background-color: #252839;
+                                    float: left;
+                                    border: 1px solid #3c3e48;
+                                    border-radius: 0 2px 2px 0;
+                                    border-left: none;
+                                    box-sizing: border-box;
+                                    width: 20%;
+                                    height: 37px;
+                                    font-size: 12px;
+                                }
+                            }
+    
+                            .mt{
+                                margin-top: 8px;
+                            }
+                            
+                            .fourBox{
+                                position: relative;
+                                width: 90%;
+                                height: 16px;
+                                line-height: 16px;
+                                margin: 0px auto 0;
+                            }
+    
+                            .fiveBox{
+                                overflow: hidden;
+                                width: 92%;
+                                height: 22px;
+                                line-height: 22px;
+                                margin: 36px auto 0;
+                                .totalAmount{
+                                    font-size: 12px;
+                                    color: #adadad;
+                                    float: left;
+                                }
+                                .totalAmountCount{
+                                    margin-left: 10px;
+                                    font-size: 12px;
+                                    color: #4bc998;
+                                    float: left;
+                                }
+                                .totalAmountName{
+                                    margin-left: 11px;
+                                    float: left;
+                                    color: rgba(165,165,165,0.9);
+                                }
+                                .totalAmountRate{
+                                    float: right;
+                                    font-size: 12px;
+                                    color:  #a5a4a4;
+    
+                                    span{
+                                        color: #4bc998;
+                                    }
+                                }
+                            }
+    
+                            .sixBtn{
+                                margin: 10px auto 0;
+                                color: #fff;
+                                text-align: center;
+                                line-height: 36px;
+                                width: 90%;
+                                height: 36px;
+                            }
+    
+                            .greenBtn{
+                                background-color: #4bc998;
+                            }
+    
+                            .redBtn{
+                                background-color: #f77070;
+                            }
+                            .buyButton{
+                                color: #fff;
+                                text-align: center;
+                                line-height: 36px;
+                                width: 100%;
+                                height: 36px;
+                                background-color: #4bc998;
+                                border: 1px solid #4bc998;
+                                border-radius: 0;
+                            }
+                            .sellButton{
+                                color: #fff;
+                                text-align: center;
+                                line-height: 36px;
+                                width: 100%;
+                                height: 36px;
+                                background-color: #f77070;
+                                border: 1px solid #f77070;
+                                border-radius: 0;
+                            }
+                        }
+                    }
+    
+                    .left_box{
+                        float: left;
+                    }
+    
+                    .right_box{
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}

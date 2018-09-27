@@ -1,0 +1,402 @@
+.itemDetail{
+    font-family: HelveticaNeue, Helvetica, Arial, "Microsoft YaHei", sans-serif;
+	font-size: 16px;
+	color: #a4a4a5;
+    text-align: center;
+}
+.navItemActive{
+    border-left: 4px solid #7fb6f9;
+    background-color: #fff !important;
+    box-sizing: border-box;
+    color: #959494 !important;
+}
+
+.detail_right_box_active{
+    background-color: #f8f9f9;
+}
+
+.redColor{
+    color: #ff6969;
+}
+
+.greenColor{
+    color: #14c99c;
+}
+
+.actPart{
+    color: #a1a0a0;
+}
+
+.banner{
+
+    width: 100%;
+    height: 360px;
+    background-color: #10274a;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/img/bg_line.png');
+    .box{
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .title{
+        font-family: HelveticaNeue, Helvetica, Arial, "Microsoft YaHei", sans-serif;
+        font-size: 30px;
+        color: #dedede;
+        font-weight: normal;
+    }
+
+    .desc{
+        font-family: HelveticaNeue, Helvetica, Arial, "Microsoft YaHei", sans-serif;
+        font-size: 16px;
+        color: #9ca2a5;
+        margin-top: 24px;
+    }
+
+    .text{
+        text-align: center;
+        padding: 120px 0 50px 0;//padding: 60px 0 50px 0;
+    }
+    .show_imgs{
+        text-align:center; 
+        margin:0 auto;
+    }
+    .show_imgs img{
+        width: 200px;
+        margin-right: 50px;
+        cursor: pointer;
+        border: 2px solid #b4b7bb;
+        border-radius: 8px;
+    }
+}
+
+.quotes{
+    width: 100%;
+    padding-bottom:30px;
+    padding-top: 30px;
+    background-color: #efefef;
+    
+    .col_0{
+        flex:1;
+    }
+    .col_1{
+        flex:1;
+    }
+    .col_2{
+        flex:1;
+    }
+    .col_3{
+        flex:1;
+    }
+    .col_4{
+        flex:1;
+    }
+    .col_5{
+        flex:1;
+    }
+    .col_6{
+        flex:1;
+        cursor: pointer;
+    }
+
+    .quotes_box{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .left_nav{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #e4e4e4;
+        .nav_item{
+            cursor: pointer;
+            font-family: HelveticaNeue, Helvetica, Arial, "Microsoft YaHei", sans-serif;
+            font-size: 14px;
+            color: #fff;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #16458d;
+            float: left;
+            border-right: 1px solid #c3c3c3;
+            i{
+                margin-left: 20px;
+                margin-right: 10px;
+            }
+
+        }
+
+        .active{
+            border-bottom: 2px solid #7fb6f9;
+            background-color: #fff !important;
+            box-sizing: border-box;
+            color: #959494 !important;
+            border-right: 0px;
+        }
+
+    }
+    .quotes_search{
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+        height: 28px;
+        border-radius: 14px;
+        font-size: 14px;
+        border: 1px solid #d3d3d4;
+        box-sizing: border-box;
+        background-color: #f8f9fb;
+        float: left;
+        margin-left: 20px;
+        margin-top: 6px;
+
+        img{
+            width: 15px;
+            height: 15px;
+            margin-left: 16px;
+            margin-top: 6px;
+        }
+
+        .placeholder(@rules){
+            ::-webkit-input-placeholder {
+                @rules();
+            }
+            ::-moz-placeholder {
+                @rules();
+            }
+            :-moz-placeholder {
+                @rules();
+            }
+            :-ms-input-placeholder {
+                @rules();
+            }
+        }
+
+        input{
+            .placeholder({
+                padding-left: 23px;
+                color: #b0b0b0;
+                font-size: 14px;
+            });
+            padding-left: 5px;
+            width: 95px;
+            height: 25px;
+            border: 0px;
+            background-color: #f8f9fb;
+            outline: none;
+        }
+
+    }
+    .text_box{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .quotes_header{
+        line-height: 28px;
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        line-height: 50px;
+        div{
+            font-family: HelveticaNeue, Helvetica, Arial, "Microsoft YaHei", sans-serif;
+            font-size: 14px;
+            color: #a4a4a5;
+            text-align: center;
+        }
+
+    }
+
+    .quotes_detail{
+        overflow: hidden;
+        width: 100%;
+        .right_box {
+            background-color: #fff;
+            float: left;
+            color: #838383;
+            width: 100%;
+            .row {
+                display: flex;
+                flex-direction: row;
+                line-height: 50px;
+                height: 50px;
+                font-family: HelveticaNeue, Helvetica, Arial, "Microsoft YaHei", sans-serif;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .gray{
+                background-color: #f8f9f9;
+            }
+
+            
+        }
+    
+    }
+
+}
+
+.introduction{
+    width: 100%;
+    background-color: #f8f8fa;
+    
+    .introduction_box{
+        width: 1200px;
+        margin: 0 auto;
+        font-family: HelveticaNeue, Helvetica, Arial, "Microsoft YaHei", sans-serif;
+        color: #575757;
+        padding: 60px 0;
+        display: flex;
+        box-sizing: border-box;
+        .item{
+            justify-content: center;
+            flex: 1;
+            display: flex;
+            box-sizing: border-box;
+            .content{
+                width: 250px;
+                text-align: center;
+                .item_title{
+                    margin-top: 10px;
+                    font-size: 18px;
+                    color: #151720;
+                }
+                .item_detail{
+                    margin-top: 10px;
+                    color: #151720;
+                    font-size: 14px;
+                }
+            }   
+            
+        }
+    }
+}
+
+.news{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+
+    .news_box{
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .news_left{
+        float: left;
+        width: 500px;
+        height: 340px;
+    }
+    
+    .news_right{
+        width: 500px;
+        height: 340px;
+        float: right;
+    }
+    
+    .news_header{
+        overflow: hidden;
+    }
+    
+    .news_title{
+        font-family: HelveticaNeue, Helvetica, Arial, "Microsoft YaHei", sans-serif;
+        font-size: 18px;
+        color: #10274a;
+        float: left;
+        margin-left: 20px;
+    }
+    
+    .new_more{
+        cursor: pointer;
+        font-family: HelveticaNeue, Helvetica, Arial, "Microsoft YaHei", sans-serif;
+        font-size: 16px;
+        color: #10274a;
+        margin-top: 8px;
+        float: right;
+    }
+    
+    .news_items{
+        margin-top: 10px;
+        overflow: hidden;
+        width: 500px;
+        border-bottom: 1px solid #e3e0e0;
+        height: 50px;
+    }
+    
+    .news_items_up{
+        overflow: hidden;
+    }
+    
+    .news_items_down{
+        float: right;
+        font-family: HelveticaNeue, Helvetica, Arial, "Microsoft YaHei", sans-serif;
+        font-size: 14px;
+        color: #5b5b5b;
+        margin-top: 4px;
+        margin-bottom: 10px;
+    }
+    
+    .gray_ball{
+        float: left;
+        margin-top: 6px;
+        margin-left: 20px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ececec;
+    }
+    
+    .items_detail{
+        cursor: pointer;
+        width: 445px;
+        float: right;
+        font-family: HelveticaNeue, Helvetica, Arial, "Microsoft YaHei", sans-serif;
+        font-size: 14px;
+        color: #5b5b5b;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.coop{
+    width: 100%;
+    height: 160px;
+    background-color:#f8f8fa;
+
+    .coop_box{
+        text-align: center;
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .partner{
+        padding-bottom: 24px;
+        padding-top: 26px;
+        font-family: HelveticaNeue, Helvetica, Arial, "Microsoft YaHei", sans-serif;
+        font-size: 22px;
+        color: rgba(117, 116, 116, 0.92);
+    }
+
+    .partners_show{
+        width: 1200px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .partners_show div{
+        flex: 10;
+        text-align: center;
+    }
+
+    .partner1,.partner5{
+        flex: 7 !important;
+    }
+    
+    .partners_show img{
+        width: 130px;
+    };
+}

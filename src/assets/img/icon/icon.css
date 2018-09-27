@@ -1,0 +1,376 @@
+/* QuickSprites - BEGIN - DO NOT REMOVE THIS LINE */
+.person,
+.frountlogo,
+.handlogo,
+.transaction,
+.behondlogo,
+.money_pass,
+.waveline,
+.notice_setting_active,
+.notice_setting,
+.setting,
+.success,
+.star_active,
+.body,
+.log,
+.log_active,
+.login_verification,
+.wave_line_active,
+.arrow_down,
+.moneypassactive,
+.star,
+.login_warn,
+.withdraw,
+.email,
+.tel,
+.down_ass,
+.safe_setting_active,
+.s_warn,
+.safe_active,
+.phone,
+.s_suc,
+.login_pass,
+.email_active,
+.up_and_down,
+.s_error,
+.safe,
+.google,
+.login_pass_active,
+.back_btn,
+.exchange,
+.body_active,
+.safe_setting,
+.phone_active,
+.push_money,
+.gps,
+.google_active,
+.serch
+{
+	display:	inline-block;
+	background-repeat:	no-repeat;
+	background-image:	url( 'icon.png' );
+}
+
+.s_suc
+{
+	background-position:	-448px -91px;
+	width:	15px;
+	height:	15px;
+}
+
+.s_warn
+{
+	background-position:	-504px -52px;
+	width:	15px;
+	height:	15px;
+}
+
+.s_error
+{
+	background-position:	-504px -77px;
+	width:	15px;
+	height:	15px;
+}
+
+.withdraw
+{
+	background-position:	-529px -52px;
+	width:	19px;
+	height:	14px;
+}
+
+.exchange
+{
+	background-position:	-89px -74px;
+	width:	38px;
+	height:	32px;
+}
+
+.transaction
+{
+	background-position:	-416px -94px;
+	width:	15px;
+	height:	12px;
+}
+
+.moneypassactive
+{
+	background-position:	-270px -74px;
+	width:	19px;
+	height:	23px;
+}
+
+.tel
+{
+	background-position:	-236px -74px;
+	width:	24px;
+	height:	24px;
+}
+
+.gps
+{
+	background-position:	-391px -66px;
+	width:	15px;
+	height:	21px;
+}
+
+.log_active
+{
+	background-position:	-295px 0;
+	width:	20px;
+	height:	23px;
+}
+
+.money_pass
+{
+	background-position:	-295px -33px;
+	width:	19px;
+	height:	23px;
+}
+
+.body_active
+{
+	background-position:	0 -87px;
+	width:	19px;
+	height:	19px;
+}
+
+.log
+{
+	background-position:	-299px -66px;
+	width:	20px;
+	height:	23px;
+}
+
+.setting
+{
+	background-position:	-475px -30px;
+	width:	18px;
+	height:	18px;
+}
+
+.safe
+{
+	background-position:	-176px -74px;
+	width:	20px;
+	height:	25px;
+}
+
+.phone
+{
+	background-position:	-324px -33px;
+	width:	15px;
+	height:	23px;
+}
+
+.phone_active
+{
+	background-position:	-325px 0;
+	width:	15px;
+	height:	23px;
+}
+
+.login_pass
+{
+	background-position:	-329px -66px;
+	width:	19px;
+	height:	23px;
+}
+
+.login_pass_active
+{
+	background-position:	-349px -33px;
+	width:	19px;
+	height:	23px;
+}
+
+.success
+{
+	background-position:	-350px 0;
+	width:	22px;
+	height:	23px;
+}
+
+.google_active
+{
+	background-position:	-476px 0;
+	width:	17px;
+	height:	17px;
+}
+
+.google
+{
+	background-position:	-477px -58px;
+	width:	17px;
+	height:	17px;
+}
+
+.email_active
+{
+	background-position:	-529px -76px;
+	width:	20px;
+	height:	14px;
+}
+
+.email
+{
+	background-position:	-532px 0;
+	width:	20px;
+	height:	14px;
+}
+
+.star_active
+{
+	background-position:	-411px -32px;
+	width:	22px;
+	height:	21px;
+}
+
+.safe_setting_active
+{
+	background-position:	-358px -66px;
+	width:	23px;
+	height:	23px;
+}
+
+.notice_setting_active
+{
+	background-position:	-414px 0;
+	width:	22px;
+	height:	21px;
+}
+
+.body
+{
+	background-position:	-29px -87px;
+	width:	19px;
+	height:	19px;
+}
+
+.safe_active
+{
+	background-position:	-206px -74px;
+	width:	20px;
+	height:	25px;
+}
+
+.push_money
+{
+	background-position:	-503px 0;
+	width:	19px;
+	height:	16px;
+}
+
+.login_warn
+{
+	background-position:	-503px -26px;
+	width:	19px;
+	height:	16px;
+}
+
+.down_ass
+{
+	background-position:	-391px -97px;
+	width:	13px;
+	height:	8px;
+}
+
+.handlogo
+{
+	background-position:	0 0;
+	width:	79px;
+	height:	77px;
+}
+
+.behondlogo
+{
+	background-position:	-89px 0;
+	width:	93px;
+	height:	64px;
+}
+
+.frountlogo
+{
+	background-position:	-192px 0;
+	width:	93px;
+	height:	64px;
+}
+
+.back_btn
+{
+	background-position:	-382px 0;
+	width:	22px;
+	height:	22px;
+}
+
+.login_verification
+{
+	background-position:	-446px 0;
+	width:	20px;
+	height:	20px;
+}
+
+.notice_setting
+{
+	background-position:	-416px -63px;
+	width:	22px;
+	height:	21px;
+}
+
+.safe_setting
+{
+	background-position:	-378px -33px;
+	width:	23px;
+	height:	23px;
+}
+
+.wave_line_active
+{
+	background-position:	-58px -87px;
+	width:	19px;
+	height:	19px;
+}
+
+.up_and_down
+{
+	background-position:	-532px -24px;
+	width:	6px;
+	height:	12px;
+}
+
+.arrow_down
+{
+	background-position:	-299px -99px;
+	width:	15px;
+	height:	7px;
+}
+
+.person
+{
+	background-position:	-137px -74px;
+	width:	29px;
+	height:	29px;
+}
+
+.serch
+{
+	background-position:	-477px -85px;
+	width:	17px;
+	height:	17px;
+}
+
+.star
+{
+	background-position:	-443px -31px;
+	width:	22px;
+	height:	21px;
+}
+
+.waveline
+{
+	background-position:	-448px -62px;
+	width:	19px;
+	height:	19px;
+}
+
+/* QuickSprites - END - DO NOT REMOVE THIS LINE */
